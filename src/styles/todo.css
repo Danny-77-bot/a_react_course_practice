@@ -1,0 +1,125 @@
+/* todo.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .todo-container {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  /* Input container */
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .input-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-container button {
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .input-container button:hover {
+    background: #218838;
+  }
+  
+  /* Task list */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .task-item strong {
+    font-size: 1.1em;
+  }
+  
+  .task-item button {
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .task-item button:first-child {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  .task-item button:first-child:hover {
+    background: #0056b3;
+  }
+  
+  .task-item button:last-child {
+    background: #dc3545;
+    color: #fff;
+  }
+  
+  .task-item button:last-child:hover {
+    background: #c82333;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 600px) {
+    .input-container {
+      flex-direction: row;
+    }
+  
+    .input-container input {
+      flex: 1;
+    }
+  
+    .task-item {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .todo-container {
+      max-width: 800px;
+    }
+  
+    .input-container {
+      justify-content: space-between;
+    }
+  }
+  

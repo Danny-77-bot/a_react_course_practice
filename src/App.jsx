@@ -4,13 +4,13 @@
 // import StatePractice from "./compoents/lessonThree/StatePractice";
 
 // import UseeffectPractice from "./compoents/lesson4/UseeffectPractice"
-import FetchPosts from "./compoents/lesson4/FetchPosts"
-
+// import FetchPosts from "./compoents/lesson4/FetchPosts"
+import TodoList from "./compoents/lesson4/lesson5/Todolist"
 export default function App() {
 
   return (
     <div>
-        <FetchPosts/> 
+       <TodoList/>  
     </div>
   )
 }
@@ -50,3 +50,5 @@ onSecondClick={()=>console.log('second click')} */}
 
 {/* <StatePractice/>  */}
 {/* <UseeffectPractice/>  */}
+
+{/* <FetchPosts/>  */}
