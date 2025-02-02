@@ -1,11 +1,12 @@
 // import Card from "./compoents/lessons/Card";
 // import CardTwo from "./compoents/lessons/CardTwo";
 
-import LoginButton from "./compoents/auhtentication/LoginButton";
-import LogoutButton from "./compoents/auhtentication/LogoutButton";
-import Navbar from "./compoents/auhtentication/Navbar";
+// import LoginButton from "./compoents/auhtentication/LoginButton";
+// import LogoutButton from "./compoents/auhtentication/LogoutButton";
+// import Navbar from "./compoents/auhtentication/Navbar";
 // import ThemeButton from "./compoents/ThemeButton";
-import { AuthProvider } from "./context/AuthContext";
+// import { AuthProvider } from "./context/AuthContext";
+import Counter from "./Counter";
 // import { ThemeProvider } from "./context/ThemeContext";
 
 // import StatePractice from "./compoents/lessonThree/StatePractice";
@@ -16,14 +17,19 @@ import { AuthProvider } from "./context/AuthContext";
 export default function App() {
 
   return (
-  
-    <AuthProvider>
-    <Navbar />
-    <LoginButton />
-    <LogoutButton />
-  </AuthProvider>
+    <div>
+    <h1>useReducer Example</h1>
+    <Counter />
+  </div>
+ 
   )
 }
+
+ //   <AuthProvider>
+  //   <Navbar />
+  //   <LoginButton />
+  //   <LogoutButton />
+  // </AuthProvider>
 
 {/* <Card>
 <h1>here is the card componet</h1>
