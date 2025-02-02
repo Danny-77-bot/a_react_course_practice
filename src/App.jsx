@@ -1,17 +1,27 @@
 // import Card from "./compoents/lessons/Card";
 // import CardTwo from "./compoents/lessons/CardTwo";
 
+import LoginButton from "./compoents/auhtentication/LoginButton";
+import LogoutButton from "./compoents/auhtentication/LogoutButton";
+import Navbar from "./compoents/auhtentication/Navbar";
+// import ThemeButton from "./compoents/ThemeButton";
+import { AuthProvider } from "./context/AuthContext";
+// import { ThemeProvider } from "./context/ThemeContext";
+
 // import StatePractice from "./compoents/lessonThree/StatePractice";
 
 // import UseeffectPractice from "./compoents/lesson4/UseeffectPractice"
 // import FetchPosts from "./compoents/lesson4/FetchPosts"
-import TodoList from "./compoents/lesson4/lesson5/Todolist"
+// import TodoList from "./compoents/lesson4/lesson5/Todolist"
 export default function App() {
 
   return (
-    <div>
-       <TodoList/>  
-    </div>
+  
+    <AuthProvider>
+    <Navbar />
+    <LoginButton />
+    <LogoutButton />
+  </AuthProvider>
   )
 }
 
@@ -52,3 +62,12 @@ onSecondClick={()=>console.log('second click')} */}
 {/* <UseeffectPractice/>  */}
 
 {/* <FetchPosts/>  */}
+{/* <TodoList/>   */}
+
+
+  // <ThemeProvider>
+    //   <div style={{ textAlign: "center", marginTop: "50px" }}>
+    //     <h1>useContext Example</h1>
+    //     <ThemeButton />
+    //   </div>
+    // </ThemeProvider>
